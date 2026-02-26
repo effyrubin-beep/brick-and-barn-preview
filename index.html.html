@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brick & Barn Midland Partners — Off-Market Home Acquisitions · Columbia, SC</title>
+<meta name="description" content="Brick & Barn buys homes directly from owners in Richland and Lexington counties. No listings, no agents, no repairs needed. 250+ satisfied clients since 2019.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --cream:#F5EFE3;--warm:#FDFAF4;
+  --clay:#B8622A;--clay-dk:#8F4A1C;--clay-lt:#D4895A;--clay-pale:#F0DDD0;
+  --bark:#2C1F14;--bark-mid:#4A3728;--bark-lt:#6B5040;
+  --stone:#8A7B6E;--stone-lt:#C4B8A8;--linen:#E8DDD0;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --display:'Cinzel',serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:var(--warm);color:var(--bark);line-height:1.7;overflow-x:hidden;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-thumb{background:var(--clay-lt);border-radius:2px;}
+a{text-decoration:none;color:inherit;}img{max-width:100%;display:block;}
+
+/* FLOATERS */
+.floaters{position:fixed;bottom:28px;right:24px;z-index:900;display:flex;flex-direction:column;gap:10px;align-items:flex-end;}
+.fl-main{background:var(--clay);color:#fff;padding:13px 22px;border-radius:50px;font-size:.78rem;font-weight:700;letter-spacing:.07em;box-shadow:0 6px 28px rgba(184,98,42,.45);transition:all .2s;display:flex;align-items:center;gap:7px;white-space:nowrap;}
+.fl-main:hover{background:var(--clay-dk);transform:translateY(-2px);}
+.fl-sec{background:var(--bark);color:#fff;padding:10px 18px;border-radius:50px;font-size:.73rem;font-weight:500;letter-spacing:.06em;box-shadow:0 4px 16px rgba(44,31,20,.3);transition:all .2s;}
+.fl-sec:hover{background:var(--bark-mid);transform:translateY(-2px);}
+
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:800;height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 56px;background:rgba(253,250,244,.96);backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:all .3s;}
+#nav.sc{border-color:var(--linen);box-shadow:0 2px 24px rgba(44,31,20,.07);}
+.nl{display:flex;align-items:center;gap:11px;}
+.nl svg{width:32px;height:32px;flex-shrink:0;}
+.nb{display:flex;flex-direction:column;line-height:1.1;}
+.nb-main{font-family:var(--display);font-size:.9rem;font-weight:600;letter-spacing:.1em;color:var(--bark);}
+.nb-main span{color:var(--clay);}
+.nb-sub{font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--stone);margin-top:1px;}
+.nlinks{display:flex;align-items:center;gap:24px;list-style:none;}
+.nlinks a{font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--bark-lt);transition:color .2s;}
+.nlinks a:hover{color:var(--clay);}
+.ncta{background:var(--clay) !important;color:#fff !important;padding:8px 16px;border-radius:4px;}
+.ncta:hover{background:var(--clay-dk) !important;}
+.ntog{display:none;background:none;border:none;cursor:pointer;padding:4px;}
+.ntog span{display:block;width:21px;height:1.5px;background:var(--bark);margin:5px 0;transition:all .3s;}
+
+/* HERO */
+#hero{position:relative;height:100vh;min-height:580px;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;padding-top:66px;}
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 80% 40% at 50% 100%, rgba(184,98,42,.18) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 70% 85%, rgba(255,180,60,.08) 0%, transparent 60%),
+    radial-gradient(ellipse 30% 25% at 30% 80%, rgba(184,98,42,.1) 0%, transparent 55%),
+    linear-gradient(180deg,
+      #0d1520 0%,
+      #141e1a 25%,
+      #1a2416 45%,
+      #1e1a0e 65%,
+      #2a1a08 80%,
+      #1a1008 100%
+    );
+  overflow:hidden;
+}
+.hero-bg .hero-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 30%;
+}
+
+.hero-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(160deg,rgba(20,12,6,.80) 0%,rgba(20,12,6,.62) 50%,rgba(44,31,20,.5) 100%);}
+/* Logo block */
+.hero-logo{position:relative;z-index:2;margin-bottom:28px;display:flex;flex-direction:column;align-items:center;gap:0;}
+/* Hero logo — Concept B style */
+.logo-b-wrap{display:flex;align-items:center;gap:18px;}
+.logo-b-text{display:flex;flex-direction:column;gap:4px;}
+.logo-b-brand{font-family:'Cinzel',serif;font-size:1.55rem;font-weight:600;letter-spacing:.18em;color:#F5EFE3;line-height:1;}
+.logo-b-brand span{color:#D4895A;}
+.logo-b-rule{width:100%;height:1px;background:rgba(212,137,90,.5);}
+.logo-b-sub{font-family:'DM Sans',sans-serif;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,239,227,.65);}
+
+/* Hero copy */
+.hero-copy{position:relative;z-index:2;text-align:center;padding:0 20px;max-width:820px;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(212,137,90,.9);margin-bottom:14px;}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:20px;height:1px;background:rgba(212,137,90,.55);}
+.hero-h1{font-family:var(--serif);font-size:clamp(2.1rem,4.2vw,3.6rem);font-weight:700;line-height:1.14;color:#fff;margin-bottom:16px;}
+.hero-h1 em{font-style:italic;color:var(--clay-lt);}
+.hero-sub{font-size:.98rem;color:rgba(255,255,255,.72);max-width:480px;margin:0 auto 28px;line-height:1.8;}
+.btn-hero{background:var(--clay);color:#fff;padding:15px 32px;border-radius:4px;font-weight:700;font-size:.85rem;letter-spacing:.07em;text-transform:uppercase;transition:all .2s;display:inline-flex;align-items:center;gap:8px;box-shadow:0 4px 24px rgba(184,98,42,.4);}
+.btn-hero:hover{background:var(--clay-dk);transform:translateY(-2px);}
+.hero-scroll{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:5px;}
+.hero-scroll span{font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.3);}
+.scroll-caret{width:16px;height:16px;border-right:1.5px solid rgba(255,255,255,.22);border-bottom:1.5px solid rgba(255,255,255,.22);transform:rotate(45deg);animation:caretB 2s ease infinite;}
+@keyframes sealAppear{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+@keyframes caretB{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(5px)}}
+
+/* ── LOGO ANIMATIONS ── */
+@keyframes drawRing{from{stroke-dashoffset:440}to{stroke-dashoffset:0}}
+@keyframes drawInner{from{stroke-dashoffset:390}to{stroke-dashoffset:0}}
+@keyframes drawRoof{from{stroke-dashoffset:200;opacity:0}to{stroke-dashoffset:0;opacity:1}}
+@keyframes riseWall{from{transform:scaleY(0);opacity:0}to{transform:scaleY(1);opacity:1}}
+@keyframes popIn{from{opacity:0;transform:scale(.88)}to{opacity:1;transform:scale(1)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes barX{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* animated hero logo classes */
+.seal-bg{animation:sealAppear .5s ease .1s both;}
+.ar{stroke-dasharray:565;stroke-dashoffset:440;animation:drawRing 1.2s cubic-bezier(.4,0,.2,1) .3s forwards;}
+.ai{stroke-dasharray:302;stroke-dashoffset:302;animation:drawInner 1s cubic-bezier(.4,0,.2,1) .7s forwards;}
+.aroof{stroke-dasharray:200;animation:drawRoof .8s ease 1.4s both;}
+.aloft{animation:popIn .4s ease 1.85s both;}
+.awall{transform-origin:bottom center;animation:riseWall .5s ease 2s both;}
+.adoor{animation:popIn .3s ease 2.3s both;}
+.at1{animation:fadeUp .5s ease 2.1s both;}
+.abar{transform-origin:center;animation:barX .5s ease 2.4s both;}
+.at2{animation:fadeUp .4s ease 2.6s both;}
+.at3{animation:fadeUp .4s ease 2.8s both;}
+
+/* STATS */
+#stats{background:var(--bark);}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);}
+.stat-c{padding:26px 20px;text-align:center;border-right:1px solid rgba(255,255,255,.05);}
+.stat-c:last-child{border-right:none;}
+.stat-n{font-family:var(--serif);font-size:2rem;font-weight:700;color:var(--clay-lt);line-height:1;}
+.stat-l{font-size:.7rem;color:rgba(255,255,255,.38);text-transform:uppercase;letter-spacing:.1em;margin-top:4px;}
+
+/* SHARED SECTION STYLES */
+section{padding:88px 80px;}
+.sec-ey{display:inline-flex;align-items:center;gap:10px;font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:16px;}
+.sec-ey::before{content:'';display:block;width:22px;height:2px;background:var(--clay);}
+.sec-h2{font-family:var(--serif);font-size:clamp(1.8rem,2.6vw,2.6rem);font-weight:700;color:var(--bark);line-height:1.2;margin-bottom:16px;}
+.sec-lead{font-size:.97rem;color:var(--bark-lt);line-height:1.8;max-width:540px;}
+
+/* TESTIMONIALS */
+#testi{background:var(--cream);padding:80px;}
+.testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:36px;}
+.tc{background:var(--warm);border-radius:8px;padding:26px 22px;border:1px solid var(--linen);position:relative;transition:all .2s;}
+.tc:hover{box-shadow:0 8px 28px rgba(44,31,20,.07);transform:translateY(-2px);}
+.tc-quote{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--bark);line-height:1.72;margin-bottom:14px;padding-top:20px;}
+.tc::before{content:'\201C';font-family:var(--serif);font-size:3.5rem;color:var(--clay-pale);position:absolute;top:8px;left:18px;line-height:1;}
+.tc-stars{color:var(--clay);font-size:.8rem;margin-bottom:6px;}
+.tc-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;}
+.tc-author{font-size:.74rem;color:var(--stone);text-transform:uppercase;letter-spacing:.1em;}
+.tc-vid-btn{display:flex;align-items:center;gap:6px;background:var(--bark);border:none;border-radius:4px;padding:6px 11px;cursor:pointer;transition:all .2s;}
+.tc-vid-btn:hover{background:var(--bark-mid);}
+.tc-vid-btn span{font-size:.66rem;color:rgba(255,255,255,.62);letter-spacing:.06em;}
+.tc-play-ic{width:16px;height:16px;border-radius:50%;background:var(--clay);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.tc-play-tri{width:0;height:0;border-top:3.5px solid transparent;border-bottom:3.5px solid transparent;border-left:6px solid #fff;margin-left:1px;}
+.tc-expand{display:none;margin-top:12px;background:var(--bark);border-radius:6px;padding:16px;text-align:center;}
+.tc-expand.open{display:block;animation:fadeUp .3s ease;}
+.tc-expand p{font-size:.77rem;color:rgba(255,255,255,.48);font-style:italic;padding:16px 0;}
+.tc-close{display:block;margin-top:6px;font-size:.66rem;color:rgba(255,255,255,.32);cursor:pointer;letter-spacing:.08em;text-transform:uppercase;background:none;border:none;width:100%;}
+.tc-close:hover{color:rgba(255,255,255,.6);}
+
+/* ABOUT */
+#about{background:var(--warm);}
+.about-g{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:start;}
+.about-right{display:flex;flex-direction:column;gap:22px;}
+/* Who We Are video */
+.wwa-vid{background:var(--bark);border-radius:10px;overflow:hidden;}
+.wwa-inner{padding:28px 24px;display:flex;align-items:center;gap:20px;}
+.wwa-play{width:52px;height:52px;border-radius:50%;background:var(--clay);display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;transition:all .2s;box-shadow:0 0 0 8px rgba(184,98,42,.1);}
+.wwa-play:hover{background:var(--clay-dk);transform:scale(1.06);}
+.wwa-tri{width:0;height:0;border-top:9px solid transparent;border-bottom:9px solid transparent;border-left:15px solid #fff;margin-left:3px;}
+.wwa-info h4{font-family:var(--serif);font-size:1.05rem;color:#fff;margin-bottom:3px;}
+.wwa-info p{font-size:.8rem;color:rgba(255,255,255,.48);line-height:1.6;}
+/* About card */
+.about-card{background:var(--bark);border-radius:10px;padding:32px 28px;color:#fff;}
+.aest{display:inline-flex;align-items:center;gap:7px;background:rgba(184,98,42,.14);border:1px solid rgba(184,98,42,.28);border-radius:4px;padding:5px 13px;font-size:.74rem;color:var(--clay-lt);letter-spacing:.08em;margin-bottom:14px;}
+.about-card h3{font-family:var(--serif);font-size:1.45rem;font-weight:700;color:#fff;margin-bottom:10px;}
+.about-card p{font-size:.86rem;color:rgba(255,255,255,.6);line-height:1.8;margin-bottom:16px;}
+.c-row{display:flex;gap:9px;}
+.c-badge{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:5px 13px;font-size:.73rem;color:rgba(255,255,255,.52);letter-spacing:.06em;}
+
+/* WHO WE HELP */
+#who{background:var(--cream);}
+.who-g{display:grid;grid-template-columns:1fr;gap:68px;align-items:start;}
+.wsd-grid{display:grid;grid-template-columns:1fr;gap:18px;max-width:520px;}
+.wsd-item{display:flex;align-items:center;gap:14px;background:var(--cream-dk);border-radius:10px;padding:18px 22px;}
+.wsd-check{color:var(--clay);font-size:1.2rem;font-weight:700;flex-shrink:0;}
+.wsd-item strong{font-size:.92rem;color:var(--bark);font-weight:600;line-height:1.4;}
+.who-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px;}
+.wc{background:var(--warm);border-radius:8px;padding:18px 15px;border-left:3px solid var(--linen);transition:all .2s;}
+.wc:hover{border-color:var(--clay);transform:translateY(-2px);box-shadow:0 8px 24px rgba(44,31,20,.07);}
+.wc-icon{font-size:1.25rem;margin-bottom:6px;}
+.wc h4{font-family:var(--serif);font-size:.93rem;font-weight:600;color:var(--bark);margin-bottom:4px;}
+.wc p{font-size:.78rem;color:var(--stone);line-height:1.58;}
+.checks{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:8px;}
+.checks li{display:flex;align-items:flex-start;gap:9px;font-size:.87rem;color:var(--bark-lt);}
+.checks li::before{content:'✓';color:var(--clay);font-weight:700;flex-shrink:0;margin-top:2px;}
+
+/* PROCESS */
+#process{background:var(--warm);}
+.proc-intro{text-align:center;margin-bottom:52px;}
+.proc-intro .sec-ey{justify-content:center;}
+.proc-intro .sec-ey::before{display:none;}
+.proc-intro .sec-lead{margin:0 auto;text-align:center;}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative;}
+.steps::before{content:'';position:absolute;top:34px;left:calc(100%/12);right:calc(100%/12);height:1px;background:linear-gradient(to right,var(--linen),var(--clay-lt),var(--linen));}
+.step{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 6px;}
+.step-b{width:68px;height:68px;border-radius:50%;background:var(--cream);border:2px solid var(--linen);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--clay);margin-bottom:15px;position:relative;z-index:1;transition:all .2s;}
+.step:hover .step-b{background:var(--clay);color:#fff;border-color:var(--clay);}
+.step h4{font-family:var(--serif);font-size:.87rem;font-weight:600;color:var(--bark);margin-bottom:5px;}
+.step p{font-size:.75rem;color:var(--stone);line-height:1.55;}
+
+/* PRICING */
+#pricing{background:var(--cream);}
+.p3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;}
+.pc{background:var(--warm);border-radius:8px;padding:28px 22px;border:1px solid var(--linen);transition:border-color .2s;}
+.pc:hover{border-color:var(--clay-lt);}
+.pc.feat{border-color:var(--clay);background:var(--clay-pale);}
+.pc-icon{font-size:1.6rem;margin-bottom:11px;}
+.pc h3{font-family:var(--serif);font-size:1.18rem;font-weight:600;color:var(--bark);margin-bottom:8px;}
+.pc p{font-size:.84rem;color:var(--bark-lt);line-height:1.75;}
+
+/* LAW FIRM */
+#lawfirm{background:var(--bark);}
+#lawfirm .sec-ey{color:var(--clay-lt);}
+#lawfirm .sec-ey::before{background:var(--clay-lt);}
+#lawfirm .sec-h2{color:#fff;}
+.lf-g{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center;}
+.lf-text p{font-size:.87rem;color:rgba(255,255,255,.58);line-height:1.8;margin-bottom:13px;}
+.lf-card{background:var(--warm);border-radius:10px;padding:32px 28px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;}
+.lf-logo img{max-width:190px;height:auto;}
+.lf-div{width:48px;height:1px;background:var(--linen);}
+.lf-card h4{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--bark);}
+.lf-card p{font-size:.8rem;color:var(--stone);line-height:1.7;}
+.lf-card a{color:var(--clay);font-size:.78rem;font-weight:700;letter-spacing:.06em;transition:color .2s;}
+.lf-card a:hover{color:var(--clay-dk);}
+
+/* FAQ */
+#faq{background:var(--warm);}
+.faq-g{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px;}
+.fi{background:var(--cream);border-radius:8px;border:1px solid var(--linen);overflow:hidden;}
+.fiq{padding:16px 20px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;gap:12px;transition:background .2s;}
+.fiq:hover{background:var(--clay-pale);}
+.fiq h4{font-family:var(--serif);font-size:.93rem;font-weight:600;color:var(--bark);line-height:1.4;}
+.fiq .arr{color:var(--clay);font-size:1.1rem;flex-shrink:0;transition:transform .3s;}
+.fi.op .arr{transform:rotate(45deg);}
+.fia{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.fi.op .fia{max-height:260px;}
+.fia p{padding:0 20px 15px;font-size:.84rem;color:var(--bark-lt);line-height:1.75;}
+
+/* QUESTIONNAIRE */
+#questionnaire{background:var(--cream);}
+.qwrap{max-width:720px;margin:0 auto;}
+.qhd{text-align:center;margin-bottom:36px;}
+.qhd .sec-ey{justify-content:center;}
+.qhd .sec-ey::before{display:none;}
+.qsub{font-size:.95rem;color:var(--bark-lt);line-height:1.75;margin-top:9px;}
+.qprog{margin-bottom:28px;}
+.qph{display:flex;justify-content:space-between;margin-bottom:6px;}
+.qpl{font-size:.72rem;color:var(--stone);}
+.qpct{font-size:.72rem;font-weight:700;color:var(--clay);}
+.qbar{height:5px;background:var(--linen);border-radius:3px;overflow:hidden;}
+.qfill{height:100%;background:linear-gradient(to right,var(--clay-lt),var(--clay));border-radius:3px;transition:width .5s ease;width:0%;}
+.qdots{display:flex;justify-content:space-between;margin-top:6px;}
+.qdot{width:7px;height:7px;border-radius:50%;background:var(--linen);transition:background .3s;}
+.qdot.done{background:var(--clay);}
+.qdot.active{background:var(--clay);box-shadow:0 0 0 3px rgba(184,98,42,.18);}
+.qsec{display:none;}
+.qsec.active{display:block;animation:fadeUp .35s ease;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.qst{font-family:var(--serif);font-size:1.18rem;font-weight:600;color:var(--bark);margin-bottom:20px;padding-bottom:9px;border-bottom:1px solid var(--linen);}
+.qfield{margin-bottom:17px;}
+.qlbl{display:block;font-size:.78rem;font-weight:700;color:var(--bark);letter-spacing:.04em;margin-bottom:6px;}
+.qlbl .opt{font-weight:300;color:var(--stone);margin-left:5px;}
+.qinput{width:100%;padding:10px 13px;border:2px solid var(--linen);border-radius:6px;font-family:var(--sans);font-size:.87rem;color:var(--bark);background:var(--warm);transition:border-color .2s;}
+.qinput:focus{outline:none;border-color:var(--clay-lt);}
+.qinput::placeholder{color:var(--stone-lt);}
+.qopts{display:flex;flex-direction:column;gap:8px;}
+.qopt{display:flex;align-items:center;gap:10px;padding:10px 13px;background:var(--warm);border:2px solid transparent;border-radius:6px;cursor:pointer;transition:all .17s;font-size:.86rem;color:var(--bark);}
+.qopt:hover{border-color:var(--clay-lt);background:var(--clay-pale);}
+.qopt input{width:16px;height:16px;accent-color:var(--clay);flex-shrink:0;}
+.qopt.sel{border-color:var(--clay);background:var(--clay-pale);}
+.qog{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.qpop{display:none;background:linear-gradient(135deg,#FFF8F0,var(--clay-pale));border:1px solid rgba(184,98,42,.15);border-radius:7px;padding:14px 17px;margin:11px 0;}
+.qpop.show{display:block;animation:fadeUp .3s ease;}
+.qpop p{font-size:.84rem;color:var(--bark-lt);line-height:1.75;}
+.qpop strong{color:var(--clay);}
+.qpop-vid{margin-top:10px;background:var(--bark);border-radius:5px;padding:9px 13px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:opacity .2s;}
+.qpop-vid:hover{opacity:.85;}
+.qpv-play{width:24px;height:24px;border-radius:50%;background:var(--clay);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.qpv-tri{width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:8px solid #fff;margin-left:2px;}
+.qpop-vid span{font-size:.75rem;color:rgba(255,255,255,.66);font-style:italic;}
+.qcond{display:none;margin-top:11px;padding:12px;background:var(--cream);border-radius:5px;border-left:3px solid var(--clay-lt);}
+.qcond.show{display:block;}
+.qnav{display:flex;justify-content:space-between;align-items:center;margin-top:26px;padding-top:18px;border-top:1px solid var(--linen);}
+.qback{background:transparent;border:2px solid var(--linen);color:var(--stone);padding:10px 20px;border-radius:4px;font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .2s;}
+.qback:hover:not(:disabled){border-color:var(--stone);color:var(--bark);}
+.qback:disabled{opacity:.3;cursor:not-allowed;}
+.qnext{background:var(--clay);border:none;color:#fff;padding:11px 26px;border-radius:4px;font-family:var(--sans);font-size:.81rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .2s;}
+.qnext:hover{background:var(--clay-dk);}
+.qsi{font-size:.71rem;color:var(--stone);}
+.qnote{font-size:.78rem;color:var(--stone);padding:9px 12px;background:var(--clay-pale);border-radius:5px;margin-bottom:15px;display:block;}
+.qty{display:none;text-align:center;padding:48px 28px;}
+.qty.show{display:block;}
+.qty-icon{font-size:2.6rem;margin-bottom:16px;}
+.qty h3{font-family:var(--serif);font-size:1.85rem;font-weight:700;color:var(--bark);margin-bottom:9px;}
+.qty>p{font-size:.9rem;color:var(--bark-lt);max-width:360px;margin:0 auto 18px;line-height:1.8;}
+.qty-sig{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--bark);}
+
+/* FINAL CTA */
+#fcta{background:var(--clay);padding:76px 80px;}
+.fci{max-width:620px;margin:0 auto;text-align:center;}
+#fcta h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;color:#fff;margin-bottom:12px;line-height:1.2;}
+#fcta p{font-size:.95rem;color:rgba(255,255,255,.8);margin-bottom:28px;line-height:1.8;}
+.fbtns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.btn-wh{background:#fff;color:var(--clay);padding:14px 30px;border-radius:4px;font-weight:700;font-size:.84rem;letter-spacing:.07em;text-transform:uppercase;transition:all .2s;display:inline-flex;align-items:center;gap:7px;}
+.btn-wh:hover{background:var(--cream);transform:translateY(-1px);}
+.btn-owh{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.42);padding:14px 30px;border-radius:4px;font-weight:700;font-size:.84rem;letter-spacing:.07em;text-transform:uppercase;transition:all .2s;}
+.btn-owh:hover{border-color:#fff;}
+
+/* CONTACT */
+#contact{background:var(--warm);padding:80px;}
+.contact-g{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+.ci-items{display:flex;flex-direction:column;gap:13px;margin-top:22px;}
+.ci-item{display:flex;align-items:flex-start;gap:12px;}
+.ci-icon{font-size:1.05rem;flex-shrink:0;margin-top:2px;}
+.ci-text strong{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--bark);margin-bottom:1px;}
+.ci-text span{font-size:.85rem;color:var(--bark-lt);}
+.cf{background:var(--cream);border-radius:10px;padding:32px 28px;}
+.cf h3{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--bark);margin-bottom:18px;}
+.cf-f{margin-bottom:13px;}
+.cf-l{display:block;font-size:.76rem;font-weight:700;color:var(--bark);margin-bottom:5px;letter-spacing:.04em;}
+.cf-i{width:100%;padding:10px 13px;border:2px solid var(--linen);border-radius:6px;font-family:var(--sans);font-size:.86rem;color:var(--bark);background:var(--warm);transition:border-color .2s;}
+.cf-i:focus{outline:none;border-color:var(--clay-lt);}
+.cf-i::placeholder{color:var(--stone-lt);}
+textarea.cf-i{resize:vertical;min-height:88px;}
+.cf-btn{width:100%;background:var(--clay);color:#fff;border:none;padding:12px;border-radius:4px;font-family:var(--sans);font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .2s;margin-top:5px;}
+.cf-btn:hover{background:var(--clay-dk);}
+
+/* FOOTER */
+footer{background:var(--bark);padding:48px 80px 30px;}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:38px;margin-bottom:36px;}
+.fb-name{font-family:var(--display);font-size:.92rem;font-weight:600;letter-spacing:.1em;color:#fff;margin-bottom:4px;}
+.fb-name span{color:var(--clay);}
+.fb-sub{font-size:.57rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.26);margin-bottom:10px;}
+.fb p{font-size:.79rem;color:rgba(255,255,255,.36);line-height:1.7;max-width:225px;}
+.fc-col h5{font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.24);margin-bottom:12px;}
+.fc-col ul{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.fc-col ul a{font-size:.79rem;color:rgba(255,255,255,.44);transition:color .2s;}
+.fc-col ul a:hover{color:var(--clay-lt);}
+.fbot{display:flex;justify-content:space-between;align-items:center;padding-top:18px;border-top:1px solid rgba(255,255,255,.05);flex-wrap:wrap;gap:9px;}
+.fbot p{font-size:.71rem;color:rgba(255,255,255,.2);}
+.fleg{display:flex;gap:15px;}
+.fleg a{font-size:.71rem;color:rgba(255,255,255,.24);transition:color .2s;}
+.fleg a:hover{color:var(--clay-lt);}
+
+/* MODALS */
+.mover{display:none;position:fixed;inset:0;background:rgba(44,31,20,.72);z-index:2000;align-items:center;justify-content:center;padding:20px;}
+.mover.open{display:flex;}
+.modal{background:var(--warm);border-radius:10px;max-width:660px;width:100%;max-height:86vh;display:flex;flex-direction:column;overflow:hidden;}
+.mh{padding:19px 26px;border-bottom:1px solid var(--linen);display:flex;align-items:center;justify-content:space-between;}
+.mh h3{font-family:var(--serif);font-size:1.25rem;font-weight:700;color:var(--bark);}
+.mclose{background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--stone);line-height:1;}
+.mclose:hover{color:var(--bark);}
+.mb{padding:26px;overflow-y:auto;flex:1;}
+.mb h4{font-family:var(--serif);font-size:1rem;font-weight:600;color:var(--bark);margin:20px 0 6px;}
+.mb h4:first-child{margin-top:0;}
+.mb p{font-size:.83rem;color:var(--bark-lt);line-height:1.8;margin-bottom:9px;}
+
+/* SUB-PAGE FRAMES */
+.subpage{display:none;position:fixed;inset:0;z-index:1800;background:var(--warm);overflow-y:auto;}
+.subpage.open{display:block;}
+.sp-nav{display:flex;align-items:center;justify-content:space-between;padding:20px 60px;background:rgba(253,250,244,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--linen);position:sticky;top:0;z-index:10;}
+.sp-back{display:flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--clay);cursor:pointer;background:none;border:none;}
+.sp-back:hover{opacity:.75;}
+.sp-title{font-family:var(--display);font-size:.85rem;letter-spacing:.1em;color:var(--bark);}
+.sp-hero{background:var(--bark);padding:80px 60px 72px;text-align:center;}
+.sp-hero .sec-ey{justify-content:center;color:var(--clay-lt);}
+.sp-hero .sec-ey::before{background:var(--clay-lt);}
+.sp-hero h1{font-family:var(--serif);font-size:clamp(2rem,3.5vw,3rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:14px;}
+.sp-hero p{font-size:.95rem;color:rgba(255,255,255,.6);max-width:500px;margin:0 auto;line-height:1.8;}
+.sp-body{padding:80px 60px;max-width:900px;margin:0 auto;}
+.sp-soon{text-align:center;padding:60px 40px;background:var(--cream);border-radius:10px;border:2px dashed var(--linen);}
+.sp-soon h3{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--bark);margin-bottom:10px;}
+.sp-soon p{font-size:.9rem;color:var(--stone);line-height:1.75;max-width:400px;margin:0 auto 24px;}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .steps{grid-template-columns:repeat(3,1fr);}
+  .steps::before{display:none;}
+}
+@media(max-width:1024px){
+  section,#testi,#lawfirm,#contact,#fcta{padding:64px 40px;}
+  #nav{padding:0 32px;}
+  footer{padding:44px 40px 28px;}
+  .about-g,.who-g,.lf-g,.contact-g{grid-template-columns:1fr;gap:34px;}
+  .testi-grid,.faq-g,.p3{grid-template-columns:1fr;}
+  .ft{grid-template-columns:1fr 1fr;}
+  .stats-row{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:768px){
+  #nav{padding:0 16px;}
+  .nlinks{display:none;position:absolute;top:66px;left:0;right:0;background:var(--warm);flex-direction:column;padding:13px;gap:0;border-bottom:1px solid var(--linen);box-shadow:0 8px 20px rgba(44,31,20,.1);}
+  .nlinks.open{display:flex;}
+  .nlinks li{width:100%;}
+  .nlinks a{display:block;padding:10px 0;border-bottom:1px solid var(--linen);font-size:.82rem;}
+  .nlinks li:last-child a{border:none;}
+  .ntog{display:block;}
+  section,#testi,#lawfirm,#contact,#fcta{padding:52px 18px;}
+  footer{padding:40px 18px 24px;}
+  .who-cards,.qog{grid-template-columns:1fr;}
+  .steps{grid-template-columns:repeat(2,1fr);gap:20px;}
+  .ft{grid-template-columns:1fr;}
+  .fbtns{flex-direction:column;align-items:center;}
+  .floaters{bottom:16px;right:12px;}
+  .fl-main,.fl-sec{font-size:.71rem;padding:9px 14px;}
+  .sp-nav,.sp-hero,.sp-body{padding-left:20px;padding-right:20px;}
+}
+@media(max-width:480px){
+  .stats-row{grid-template-columns:1fr 1fr;}
+  .hero-h1{font-size:1.85rem;}
+}
+
+/* ── LOGO: Option 7B — double rule frame ── */
+.logo-7b { text-align: center; }
+.logo-7b-frame {
+  display: inline-block;
+  border-top: 1px solid var(--clay);
+  border-bottom: 1px solid var(--clay);
+  padding: 14px 44px;
+  position: relative;
+}
+.logo-7b-frame::before {
+  content: '';
+  position: absolute;
+  top: 5px; left: 0; right: 0;
+  border-top: .5px solid rgba(184,98,42,.28);
+}
+.logo-7b-frame::after {
+  content: '';
+  position: absolute;
+  bottom: 5px; left: 0; right: 0;
+  border-bottom: .5px solid rgba(184,98,42,.28);
+}
+.logo-7b-main {
+  font-family: 'Cinzel', serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: .28em;
+  color: var(--bark);
+  text-transform: uppercase;
+  line-height: 1;
+}
+.logo-7b-main .amp { color: var(--clay); }
+.logo-7b-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: .57rem;
+  font-weight: 400;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-top: 10px;
+}
+/* Dark background variant (hero) */
+.logo-7b-dk .logo-7b-frame {
+  border-color: rgba(212,137,90,.55);
+}
+.logo-7b-dk .logo-7b-frame::before,
+.logo-7b-dk .logo-7b-frame::after {
+  border-color: rgba(212,137,90,.18);
+}
+.logo-7b-dk .logo-7b-main { color: #F5EFE3; }
+.logo-7b-dk .logo-7b-main .amp { color: #D4895A; }
+.logo-7b-dk .logo-7b-sub { color: rgba(245,239,227,.4); }
+/* Navbar small size */
+.logo-7b-sm .logo-7b-frame { padding: 7px 18px; }
+.logo-7b-sm .logo-7b-frame::before { top: 3px; }
+.logo-7b-sm .logo-7b-frame::after { bottom: 3px; }
+.logo-7b-sm .logo-7b-main { font-size: .85rem; letter-spacing: .2em; }
+.logo-7b-sm .logo-7b-sub { font-size: .47rem; margin-top: 5px; letter-spacing: .22em; }
+
+
+/* Hero bg — atmospheric dark gradient */
+.hero-bg{position:absolute;inset:0;z-index:0;}
+
+/* Testimonial avatars */
+.tc-avatar{width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid var(--linen);}
+.tc-avatar img{width:100%;height:100%;object-fit:cover;}
+.tc-author-row{display:flex;align-items:center;gap:12px;}
+.tc-author-info{display:flex;flex-direction:column;gap:2px;}
+.tc-author-name{font-size:.78rem;font-weight:600;color:var(--bark);}
+.tc-author-loc{font-size:.68rem;color:var(--stone);letter-spacing:.04em;}
+
+
+/* Who We Are — large video card */
+.wwa-section { display: flex; flex-direction: column; }
+.wwa-title {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--bark);
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+.wwa-vid-lg {
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+.wwa-vid-lg:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(44,31,20,.18); }
+.wwa-thumb {
+  background: var(--bark);
+  padding: 56px 48px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  min-height: 220px;
+}
+.wwa-play-lg {
+  width: 96px; height: 96px;
+  border-radius: 50%;
+  background: var(--clay);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 14px rgba(184,98,42,.15);
+  transition: all .2s;
+}
+.wwa-vid-lg:hover .wwa-play-lg { background: var(--clay-dk); transform: scale(1.06); }
+.wwa-tri {
+  width: 0; height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 24px solid #fff;
+  margin-left: 6px;
+}
+.wwa-thumb-text { display: flex; flex-direction: column; gap: 8px; }
+.wwa-thumb-name {
+  font-family: var(--serif);
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #fff;
+}
+.wwa-thumb-role {
+  font-size: .9rem;
+  color: rgba(255,255,255,.5);
+  line-height: 1.5;
+}
+.wwa-thumb-dur {
+  font-size: .82rem;
+  color: var(--clay-lt);
+  letter-spacing: .06em;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+</style>
+</head>
+<body>
+
+<!-- FLOATERS -->
+<div class="floaters">
+  <a href="#questionnaire" class="fl-main">&#9201; 2-Min Questionnaire</a>
+  <a href="#contact" class="fl-sec">Contact Us</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nl">
+    <div class="logo-7b logo-7b-sm">
+      <div class="logo-7b-frame">
+        <div class="logo-7b-main">BRICK <span class="amp">&amp;</span> BARN</div>
+        <div class="logo-7b-sub">Midland Partners</div>
+      </div>
+    </div>
+  </a>
+  <ul class="nlinks" id="nlinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#who">Who We Help</a></li>
+    <li><a href="#why-sell-direct">Why Sell Direct?</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#questionnaire" class="ncta">&#9201; 2-Min Form</a></li>
+  </ul>
+  <button class="ntog" id="ntog" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <video class="hero-video" controls>
+      <source src="hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-ov"></div>
+
+  <!-- Logo: Option 7B on dark -->
+  <div class="hero-logo">
+    <div class="logo-7b logo-7b-dk">
+      <div class="logo-7b-frame">
+        <div class="logo-7b-main">BRICK <span class="amp">&amp;</span> BARN</div>
+        <div class="logo-7b-sub">Midland Partners</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-copy">
+    <div class="hero-eyebrow">Richland County &nbsp;&middot;&nbsp; Lexington County</div>
+    <h1 class="hero-h1">A <em>private, respectful</em> way to sell your home off-market.</h1>
+    <p class="hero-sub">No listings. No agents. No open houses. A direct conversation about your property &mdash; at your pace, on your terms.</p>
+    <a href="#questionnaire" class="btn-hero">&#9201; 2-Min Questionnaire &mdash; No Obligation</a>
+  </div>
+
+  <div class="hero-scroll"><div class="scroll-caret"></div><span>Scroll</span></div>
+</section>
+
+<!-- STATS -->
+<div id="stats">
+  <div class="stats-row">
+    <div class="stat-c"><div class="stat-n">$0</div><div class="stat-l">Fees to Explore</div></div>
+    <div class="stat-c"><div class="stat-n">250+</div><div class="stat-l">Satisfied Clients</div></div>
+    <div class="stat-c"><div class="stat-n">0</div><div class="stat-l">Repairs Required</div></div>
+    <div class="stat-c"><div class="stat-n">14</div><div class="stat-l">Day Avg. Close</div></div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div id="testi">
+  <div class="sec-ey">What Sellers Say</div>
+  <h2 class="sec-h2">Columbia homeowners who've been through it.</h2>
+  <div class="testi-grid">
+    <div class="tc">
+      <div class="tc-quote">I inherited my mother's house and had no idea where to start. Efraim Rubin walked me through every step, never pressured me, and we closed on my timeline. Cannot recommend this enough.</div>
+      <div class="tc-stars">★★★★★</div>
+      <div class="tc-meta">
+        <div class="tc-author-row">
+          <div class="tc-avatar"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M." onerror="this.parentElement.style.background='var(--linen)';this.style.display='none'"></div>
+          <div class="tc-author-info">
+            <div class="tc-author-name">Sarah M.</div>
+            <div class="tc-author-loc">Richland County · 2023</div>
+          </div>
+        </div>
+        <button class="tc-vid-btn" onclick="toggleVid(this)"><div class="tc-play-ic"><div class="tc-play-tri"></div></div><span>Watch Story</span></button>
+      </div>
+      <div class="tc-expand"><p>Video testimonial — upload your client video here.</p><button class="tc-close" onclick="closeVid(this)">Close ×</button></div>
+    </div>
+    <div class="tc">
+      <div class="tc-quote">The house needed a lot of work and I didn't have money to fix it. Brick & Barn bought it as-is. No repairs, no showings, no hassle. Exactly what I needed at exactly the right time.</div>
+      <div class="tc-stars">★★★★★</div>
+      <div class="tc-meta">
+        <div class="tc-author-row">
+          <div class="tc-avatar"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James T." onerror="this.parentElement.style.background='var(--linen)';this.style.display='none'"></div>
+          <div class="tc-author-info">
+            <div class="tc-author-name">James T.</div>
+            <div class="tc-author-loc">Lexington County · 2023</div>
+          </div>
+        </div>
+        <button class="tc-vid-btn" onclick="toggleVid(this)"><div class="tc-play-ic"><div class="tc-play-tri"></div></div><span>Watch Story</span></button>
+      </div>
+      <div class="tc-expand"><p>Video testimonial — upload your client video here.</p><button class="tc-close" onclick="closeVid(this)">Close ×</button></div>
+    </div>
+    <div class="tc">
+      <div class="tc-quote">I was skeptical at first but the process was completely transparent. Efraim Rubin was professional, honest, and patient throughout. Closed in under three weeks with zero drama.</div>
+      <div class="tc-stars">★★★★★</div>
+      <div class="tc-meta">
+        <div class="tc-author-row">
+          <div class="tc-avatar"><img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Marcus W." onerror="this.parentElement.style.background='var(--linen)';this.style.display='none'"></div>
+          <div class="tc-author-info">
+            <div class="tc-author-name">Marcus W.</div>
+            <div class="tc-author-loc">Richland County · 2024</div>
+          </div>
+        </div>
+        <button class="tc-vid-btn" onclick="toggleVid(this)"><div class="tc-play-ic"><div class="tc-play-tri"></div></div><span>Watch Story</span></button>
+      </div>
+      <div class="tc-expand"><p>Video testimonial — upload your client video here.</p><button class="tc-close" onclick="closeVid(this)">Close ×</button></div>
+    </div>
+    <div class="tc">
+      <div class="tc-quote">Had tenants in the property and thought it would be impossible to sell. Brick & Barn handled everything professionally. I didn't have to deal with the tenant situation at all.</div>
+      <div class="tc-stars">★★★★★</div>
+      <div class="tc-meta">
+        <div class="tc-author-row">
+          <div class="tc-avatar"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Linda R." onerror="this.parentElement.style.background='var(--linen)';this.style.display='none'"></div>
+          <div class="tc-author-info">
+            <div class="tc-author-name">Linda R.</div>
+            <div class="tc-author-loc">Lexington County · 2024</div>
+          </div>
+        </div>
+        <button class="tc-vid-btn" onclick="toggleVid(this)"><div class="tc-play-ic"><div class="tc-play-tri"></div></div><span>Watch Story</span></button>
+      </div>
+      <div class="tc-expand"><p>Video testimonial — upload your client video here.</p><button class="tc-close" onclick="closeVid(this)">Close ×</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-g">
+    <div>
+      <div class="sec-ey">About Brick &amp; Barn</div>
+      <h2 class="sec-h2">A Columbia real estate firm built on relationships, not transactions.</h2>
+      <p class="sec-lead">Brick &amp; Barn LLC has operated in the Columbia area since 2019. We are a full-spectrum real estate firm — acquiring, renovating, and maintaining properties across Richland and Lexington counties. The Off-Market Acquisitions division works directly with homeowners who are ready for a private, straightforward sale — without listings, agents, or the uncertainty of the open market.</p>
+    </div>
+
+
+ 
+    <div class="about-right">
+      <div class="wwa-section">
+        <div class="sec-ey" style="margin-bottom:14px;">Who We Are</div>
+        <div class="wwa-vid wwa-vid-lg">
+          <div class="wwa-thumb">
+            <div class="wwa-play-lg"><div class="wwa-tri"></div></div>
+            <div class="wwa-thumb-text">
+              <div class="wwa-thumb-name">Who you're actually talking to</div>
+              <div class="wwa-thumb-role">Efraim Rubin · Co-Founder</div>
+              <div class="wwa-thumb-dur">&#9654; Watch (~30 sec)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE HELP -->
+<section id="who">
+  <div class="who-g">
+    <div>
+      <div class="sec-ey">Who We Help</div>
+      <h2 class="sec-h2">You don't need a perfect situation to sell directly.</h2>
+      <div class="who-cards">
+        <div class="wc"><div class="wc-icon">🏚️</div><h4>Inherited Property</h4><p>Estate situations needing a clean, private resolution.</p></div>
+        <div class="wc"><div class="wc-icon">🔧</div><h4>Needs Repairs</h4><p>Property needs work and you don't want to spend more before selling.</p></div>
+        <div class="wc"><div class="wc-icon">🔑</div><h4>Tenant Situations</h4><p>Occupied by tenants — we handle that properly and professionally.</p></div>
+        <div class="wc"><div class="wc-icon">⏰</div><h4>Time Pressure</h4><p>Relocation, divorce, financial stress — need to move quickly.</p></div>
+        <div class="wc"><div class="wc-icon">🔒</div><h4>Values Privacy</h4><p>You don't want strangers in your home or your sale on Zillow.</p></div>
+        <div class="wc"><div class="wc-icon">💡</div><h4>Exploring Options</h4><p>Not sure what's possible — just want to understand your options.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SELL DIRECT -->
+<section id="why-sell-direct">
+  <div class="sec-ey">Why Sell Direct?</div>
+  <h2 class="sec-h2">A simpler path to closing.</h2>
+  <p class="sec-lead" style="margin-bottom:40px;">We work with homeowners in Richland and Lexington counties who are ready for a direct conversation — not a listing.</p>
+  <div class="wsd-grid">
+    <div class="wsd-item"><div class="wsd-check">✓</div><div><strong>No agent commissions or listing fees</strong></div></div>
+    <div class="wsd-item"><div class="wsd-check">✓</div><div><strong>No repairs required before selling</strong></div></div>
+    <div class="wsd-item"><div class="wsd-check">✓</div><div><strong>Flexible timelines — you set the pace</strong></div></div>
+    <div class="wsd-item"><div class="wsd-check">✓</div><div><strong>Creative structures available — not just cash</strong></div></div>
+    <div class="wsd-item"><div class="wsd-check">✓</div><div><strong>Private — your sale stays completely off-market</strong></div></div>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="proc-intro">
+    <div class="sec-ey">How It Works</div>
+    <h2 class="sec-h2">Six clear steps.</h2>
+    <p class="sec-lead">We move at your pace. No pressure to proceed at any stage.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="step-b">1</div><h4>Questionnaire</h4><p>Fill in our 2-minute form so we understand your property and situation.</p></div>
+    <div class="step"><div class="step-b">2</div><h4>Conversation</h4><p>We personally review your answers and reach out to discuss options.</p></div>
+    <div class="step"><div class="step-b">3</div><h4>Agreement</h4><p>We agree on terms that work for both sides at whatever pace suits you.</p></div>
+    <div class="step"><div class="step-b">4</div><h4>Inspection</h4><p>Property inspection as part of our standard due diligence process.</p></div>
+    <div class="step"><div class="step-b">5</div><h4>Escrow &amp; Title</h4><p>Escrow opened, title search completed by our closing law firm.</p></div>
+    <div class="step"><div class="step-b">6</div><h4>Closing</h4><p>You receive your proceeds. We handle everything else.</p></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="sec-ey">Sale Structures</div>
+  <h2 class="sec-h2">Not every sale needs to be all-cash.</h2>
+  <p class="sec-lead">We offer flexible structures depending on what works best for your situation.</p>
+  <div class="p3">
+    <div class="pc feat"><div class="pc-icon">💵</div><h3>Cash Offer</h3><p>A straightforward all-cash purchase. Fast closing, no financing contingencies, no surprises.</p></div>
+    <div class="pc"><div class="pc-icon">📅</div><h3>Seller Financing</h3><p>You act as the lender — allowing for a higher overall price, income over time, and tax advantages.</p></div>
+    <div class="pc"><div class="pc-icon">🔄</div><h3>Mortgage Takeover</h3><p>In certain situations we can take over your existing mortgage, creating flexibility on price and timing.</p></div>
+  </div>
+</section>
+
+<!-- LAW FIRM — above FAQ -->
+<section id="lawfirm">
+  <div class="lf-g">
+    <div class="lf-text">
+      <div class="sec-ey">Our Closing Attorney</div>
+      <h2 class="sec-h2">Every closing handled by a trusted, established law firm.</h2>
+      <p>All Brick &amp; Barn property closings are handled by Harrell, Martin &amp; Peace, P.A. — a full-service South Carolina law firm serving the Columbia area since 1995.</p>
+      <p>Every title search, escrow, and closing document is handled by licensed South Carolina real estate attorneys — giving both parties confidence, legal protection, and complete peace of mind.</p>
+      <p>You are always welcome and encouraged to have your own attorney present at closing.</p>
+    </div>
+    <div>
+      <div class="lf-card">
+        <div class="lf-logo">
+          <img src="https://harrellmartinpeace.com/wp-content/uploads/2017/06/HMP-logo-1x.png" alt="Harrell, Martin & Peace, P.A." onerror="this.style.display='none';document.getElementById('hmpfb').style.display='block'">
+          <div id="hmpfb" style="display:none;font-family:var(--display);font-size:.95rem;font-weight:600;color:var(--bark);letter-spacing:.06em;">HARRELL, MARTIN &amp; PEACE</div>
+        </div>
+        <div class="lf-div"></div>
+        <h4>Harrell, Martin &amp; Peace, P.A.</h4>
+        <p>Full-service law firm · Real Estate · Estate Planning · Corporate Law<br>Serving South Carolina since 1995</p>
+        <a href="https://harrellmartinpeace.com" target="_blank" rel="noopener">Visit harrellmartinpeace.com →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="sec-ey">Common Questions</div>
+  <h2 class="sec-h2">Honest answers.</h2>
+  <div class="faq-g">
+    <div class="fi"><div class="fiq"><h4>Does filling in the questionnaire commit me to anything?</h4><span class="arr">+</span></div><div class="fia"><p>No. Submitting the questionnaire creates no obligation whatsoever. You can stop the process at any point, for any reason, at no cost.</p></div></div>
+    <div class="fi"><div class="fiq"><h4>How is this different from selling with an agent?</h4><span class="arr">+</span></div><div class="fia"><p>No listings, no showings, no commissions, no waiting. We buy directly — speed, privacy, no agent fees. The trade-off is you're selling to one buyer rather than the open market. We're transparent about that.</p></div></div>
+    <div class="fi"><div class="fiq"><h4>My property needs significant repairs. Is that a problem?</h4><span class="arr">+</span></div><div class="fia"><p>Not at all. We buy properties in all conditions. Condition factors into our offer structure — it doesn't disqualify your property. No money needed on fixes before we meet.</p></div></div>
+    <div class="fi"><div class="fiq"><h4>Can I have an attorney review the agreement?</h4><span class="arr">+</span></div><div class="fia"><p>Absolutely, and we encourage it. Our closing firm — Harrell, Martin &amp; Peace — handles all title work and can assist sellers with questions.</p></div></div>
+    <div class="fi"><div class="fiq"><h4>What if I have tenants in the property?</h4><span class="arr">+</span></div><div class="fia"><p>We handle tenant-occupied properties regularly. Tenant situations are addressed as part of the purchase structure — not after the fact. We are familiar with SC landlord-tenant law.</p></div></div>
+    <div class="fi"><div class="fiq"><h4>How quickly can you close?</h4><span class="arr">+</span></div><div class="fia"><p>Our average close is 14 days after agreement. We can also slow down if you need more time — the timeline is yours to set.</p></div></div>
+    <div class="fi"><div class="fiq"><h4>What does "creative structure" mean?</h4><span class="arr">+</span></div><div class="fia"><p>Sale options beyond a simple cash offer — like seller financing or assuming your existing mortgage. We explain everything clearly and in plain language.</p></div></div>
+    <div class="fi"><div class="fiq"><h4>Is my information kept private?</h4><span class="arr">+</span></div><div class="fia"><p>Yes. Information shared through our questionnaire is never shared with third parties, listed publicly, or used for marketing. See our Privacy Policy for full details.</p></div></div>
+  </div>
+</section>
+
+<!-- QUESTIONNAIRE -->
+<section id="questionnaire">
+  <div class="qwrap">
+    <div class="qhd">
+      <div class="sec-ey" style="justify-content:center;">No Obligation · Takes ~2 Minutes</div>
+      <h2 class="sec-h2" style="text-align:center;">See if a Direct Sale Could Be a Fit for You</h2>
+      <p class="qsub" style="text-align:center;">Answer a few short questions about your property. No commitment of any kind.</p>
+    </div>
+    <div class="qprog">
+      <div class="qph"><span class="qpl">Your progress</span><span class="qpct" id="qpct">0% complete</span></div>
+      <div class="qbar"><div class="qfill" id="qfill"></div></div>
+      <div class="qdots" id="qdots"></div>
+    </div>
+
+
+
+    <div class="qsec active" data-s="0">
+      <div class="qst">Section 1 — Property Basics</div>
+      <div class="qfield"><label class="qlbl">Owner name</label><input class="qinput" type="text" placeholder="Your full name"></div>
+      <div class="qfield"><label class="qlbl">Property address</label><input class="qinput" type="text" placeholder="Street address, city, zip"></div>
+      <div class="qfield"><label class="qlbl">Property type</label>
+        <div class="qopts">
+          <label class="qopt"><input type="radio" name="pt"> Single-family home</label>
+          <label class="qopt"><input type="radio" name="pt"> Townhouse / Condo</label>
+          <label class="qopt"><input type="radio" name="pt"> Mobile home</label>
+          <label class="qopt"><input type="radio" name="pt"> Commercial</label>
+          <label class="qopt"><input type="radio" name="pt"> Vacant land</label>
+        </div>
+      </div>
+      <div class="qfield"><label class="qlbl">Approx. size <span class="opt">(sqft)</span></label><input class="qinput" type="text" placeholder="e.g. 1,800"></div>
+      <div class="qfield"><label class="qlbl">Bedrooms / Bathrooms</label><input class="qinput" type="text" placeholder="e.g. 3 / 2"></div>
+    </div>
+
+
+    <div class="qsec" data-s="1">
+      <div class="qst">Section 2 — Ownership &amp; Occupancy</div>
+      <div class="qfield"><label class="qlbl">Is the property currently occupied?</label>
+        <div class="qopts">
+          <label class="qopt" onclick="hc('tenBox')"><input type="radio" name="occ"> Owner-occupied</label>
+          <label class="qopt" onclick="sc('tenBox')"><input type="radio" name="occ"> Tenant-occupied</label>
+          <label class="qopt" onclick="hc('tenBox')"><input type="radio" name="occ"> Vacant</label>
+        </div>
+        <div class="qcond" id="tenBox">
+          <div class="qpop show" style="margin:0 0 12px;"><p><strong>💡 Good to know.</strong> Properties with tenants are very common in direct sales — usually addressed upfront.</p></div>
+          <label class="qlbl">Lease type</label>
+          <div class="qopts">
+            <label class="qopt"><input type="radio" name="lease"> Month-to-month</label>
+            <label class="qopt" onclick="sc('leaseEnd')"><input type="radio" name="lease"> Lease in place</label>
+          </div>
+          <div class="qcond" id="leaseEnd" style="margin-top:10px;">
+            <div class="qfield"><label class="qlbl">Lease end date</label><input class="qinput" type="text" placeholder="e.g. December 2025"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="qsec" data-s="2">
+      <div class="qst">Section 3 — Your Priorities</div>
+      <div class="qfield"><label class="qlbl">What would matter most if you were to sell? <span class="opt">Select up to 2</span></label>
+        <div class="qog">
+          <label class="qopt"><input type="checkbox" name="pri"> Speed</label>
+          <label class="qopt"><input type="checkbox" name="pri"> Certainty</label>
+          <label class="qopt"><input type="checkbox" name="pri"> Flexibility</label>
+          <label class="qopt"><input type="checkbox" name="pri"> Privacy</label>
+          <label class="qopt"><input type="checkbox" name="pri"> Best possible price</label>
+          <label class="qopt"><input type="checkbox" name="pri"> Not sure yet</label>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="qsec" data-s="3">
+      <div class="qst">Section 4 — Mortgage &amp; Liens</div>
+      <div class="qfield"><label class="qlbl">Is there an existing mortgage on the property?</label>
+        <div class="qopts">
+          <label class="qopt" onclick="sc('mortBox');sp('mortPop')"><input type="radio" name="mort"> Yes</label>
+          <label class="qopt" onclick="hc('mortBox');hp('mortPop')"><input type="radio" name="mort"> No</label>
+          <label class="qopt" onclick="hc('mortBox');hp('mortPop')"><input type="radio" name="mort"> Not sure</label>
+        </div>
+        <div class="qpop" id="mortPop"><p><strong>💡 Good to know.</strong> An existing mortgage can create more flexible options — sometimes allowing sellers to get closer to their price or gain flexibility on timing.</p>
+          <div class="qpop-vid"><div class="qpv-play"><div class="qpv-tri"></div></div><span>▶ "How an existing mortgage can work in a seller's favor"</span></div>
+        </div>
+        <div class="qcond" id="mortBox">
+          <div class="qfield"><label class="qlbl">Approx. remaining balance ($)</label><input class="qinput" type="text" placeholder="e.g. $85,000"></div>
+          <div class="qfield"><label class="qlbl">Monthly payment ($)</label><input class="qinput" type="text" placeholder="e.g. $950"></div>
+          <div class="qfield"><label class="qlbl">Interest rate <span class="opt">(if known)</span></label><input class="qinput" type="text" placeholder="e.g. 4.5%"></div>
+        </div>
+      </div>
+      <div class="qfield"><label class="qlbl">Any other liens on the property?</label>
+        <div class="qopts">
+          <label class="qopt" onclick="hc('liensBox')"><input type="radio" name="liens"> No</label>
+          <label class="qopt" onclick="sc('liensBox')"><input type="radio" name="liens"> Yes</label>
+          <label class="qopt" onclick="hc('liensBox')"><input type="radio" name="liens"> Not sure</label>
+        </div>
+        <div class="qcond" id="liensBox"><div class="qfield"><label class="qlbl">Please describe</label><input class="qinput" type="text" placeholder="e.g. HOA lien, tax lien"></div></div>
+      </div>
+    </div>
+
+
+    <div class="qsec" data-s="4">
+      <div class="qst">Section 5 — Timing &amp; Motivation</div>
+      <div class="qfield"><label class="qlbl">How soon are you looking to sell?</label>
+        <div class="qopts">
+          <label class="qopt" onclick="hp('timPop')"><input type="radio" name="tim"> ASAP (days/weeks)</label>
+          <label class="qopt" onclick="hp('timPop')"><input type="radio" name="tim"> Within 1–3 months</label>
+          <label class="qopt" onclick="hp('timPop')"><input type="radio" name="tim"> 3–6 months</label>
+          <label class="qopt" onclick="sp('timPop')"><input type="radio" name="tim"> Just exploring options</label>
+        </div>
+        <div class="qpop" id="timPop"><p><strong>Totally fine.</strong> Many sellers start here just to understand what's possible. This is simply a first step — not a commitment.</p></div>
+      </div>
+      <div class="qfield"><label class="qlbl">Main reason for selling? <span class="opt">Optional</span></label><input class="qinput" type="text" placeholder="e.g. relocating, inherited, financial..."></div>
+    </div>
+
+
+    <div class="qsec" data-s="5">
+      <div class="qst">Section 6 — Property Condition</div>
+      <div class="qfield"><label class="qlbl">Overall condition</label>
+        <div class="qopts">
+          <label class="qopt" onclick="hp('condPop')"><input type="radio" name="cond"> Excellent — move-in ready</label>
+          <label class="qopt" onclick="hp('condPop')"><input type="radio" name="cond"> Good — minor updates needed</label>
+          <label class="qopt" onclick="sp('condPop')"><input type="radio" name="cond"> Fair — needs repairs</label>
+          <label class="qopt" onclick="sp('condPop')"><input type="radio" name="cond"> Poor — major renovations needed</label>
+        </div>
+        <div class="qpop" id="condPop"><p>In direct sales, <strong>condition is part of the structure, not an obstacle.</strong></p></div>
+      </div>
+      <div class="qfield"><label class="qlbl">Which areas need work? <span class="opt">All that apply</span></label>
+        <div class="qog">
+          <label class="qopt"><input type="checkbox" name="rep"> Roof</label>
+          <label class="qopt"><input type="checkbox" name="rep"> Kitchen</label>
+          <label class="qopt"><input type="checkbox" name="rep"> Bathrooms</label>
+          <label class="qopt"><input type="checkbox" name="rep"> Flooring</label>
+          <label class="qopt"><input type="checkbox" name="rep"> HVAC</label>
+          <label class="qopt"><input type="checkbox" name="rep"> Plumbing</label>
+          <label class="qopt"><input type="checkbox" name="rep"> Electrical</label>
+          <label class="qopt"><input type="checkbox" name="rep"> Exterior</label>
+          <label class="qopt"><input type="checkbox" name="rep"> Not sure</label>
+        </div>
+      </div>
+      <div class="qfield"><label class="qlbl">Estimated repair cost</label>
+        <div class="qopts">
+          <label class="qopt" onclick="sp('repG');hp('repB')"><input type="radio" name="re"> Not sure / I'd like guidance</label>
+          <label class="qopt" onclick="hp('repG');hp('repB')"><input type="radio" name="re"> Below $10,000</label>
+          <label class="qopt" onclick="hp('repG');hp('repB')"><input type="radio" name="re"> $10,000 – $25,000</label>
+          <label class="qopt" onclick="hp('repG');sp('repB')"><input type="radio" name="re"> $25,000 – $50,000</label>
+          <label class="qopt" onclick="hp('repG');sp('repB')"><input type="radio" name="re"> $50,000+</label>
+        </div>
+        <div class="qpop" id="repG"><p><strong>Very common.</strong> Most sellers aren't sure how repair costs affect value. We'll help estimate this as part of our conversation.</p></div>
+        <div class="qpop" id="repB">
+          <p><strong>Thanks for sharing.</strong> Properties needing significant work often benefit from a direct sale — we handle renovations without you spending more upfront.</p>
+          <div class="qpop-vid"><div class="qpv-play"><div class="qpv-tri"></div></div><span>▶ "Why some sellers choose a direct sale for fixer-uppers"</span></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="qsec" data-s="6">
+      <div class="qst">Section 7 — Price Expectations</div>
+      <div class="qfield">
+        <label class="qlbl">Considering the property condition, what price range feels fair?</label>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;">
+          <div><label class="qlbl" style="font-size:.72rem;">From ($)</label><input class="qinput" type="text" placeholder="e.g. $180,000"></div>
+          <div><label class="qlbl" style="font-size:.72rem;">To ($)</label><input class="qinput" type="text" placeholder="e.g. $220,000"></div>
+        </div>
+        <div class="qopts">
+          <label class="qopt" onclick="sp('crePop');hp('guidPop')"><input type="checkbox" name="po"> I'm open to creative options</label>
+          <label class="qopt" onclick="sp('guidPop');hp('crePop')"><input type="checkbox" name="po"> Not sure yet / I'd like guidance</label>
+        </div>
+        <div class="qpop" id="guidPop"><p><strong>That's completely fine.</strong> Many sellers want a fair outcome but aren't sure how repairs and timing affect price. We'll walk through this together.</p></div>
+        <div class="qpop" id="crePop"><p><strong>This doesn't mean anything complicated.</strong> It simply means there may be ways to structure a sale that are not all-cash but could offer a higher price, income over time, or more flexibility on timing.</p></div>
+        <div class="qcond show" style="margin-top:11px;">
+          <label class="qlbl">Which structures would you consider?</label>
+          <div class="qopts">
+            <label class="qopt"><input type="checkbox" name="str"> All-cash offer</label>
+            <label class="qopt"><input type="checkbox" name="str"> Seller financing</label>
+            <label class="qopt"><input type="checkbox" name="str"> Existing mortgage taken over</label>
+            <label class="qopt"><input type="checkbox" name="str"> Not sure — open to hearing options</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="qsec" data-s="7">
+      <div class="qst">Section 8 — Contact Details</div>
+      <span class="qnote">🔒 Your information is only seen by our team — never shared, never sold, never used for marketing.</span>
+      <div class="qfield"><label class="qlbl">Your name</label><input class="qinput" type="text" placeholder="Full name"></div>
+      <div class="qfield"><label class="qlbl">Phone number</label><input class="qinput" type="tel" placeholder="(803) XXX-XXXX"></div>
+      <div class="qfield"><label class="qlbl">Email address</label><input class="qinput" type="email" placeholder="you@example.com"></div>
+      <div class="qfield"><label class="qlbl">Preferred way to connect</label>
+        <div class="qopts">
+          <label class="qopt"><input type="radio" name="cp"> Phone call</label>
+          <label class="qopt"><input type="radio" name="cp"> Text / WhatsApp</label>
+          <label class="qopt"><input type="radio" name="cp"> Email</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="qnav" id="qnav">
+      <button class="qback" id="qback" onclick="qPrev()" disabled>← Back</button>
+      <span class="qsi" id="qsi">Section 1 of 8</span>
+      <button class="qnext" id="qnext" onclick="qNext()">Next →</button>
+    </div>
+    <div class="qty" id="qty">
+      <div class="qty-icon">🏡</div>
+      <h3>Thank you — well done.</h3>
+      <p>Our team will personally review your answers and reach out to discuss whether a direct sale could be a good fit. No pressure. Just a conversation.</p>
+      <p class="qty-sig">— Efraim Rubin, Brick &amp; Barn Midland Partners</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="fcta">
+  <div class="fci">
+    <h2>Ready to explore your options?</h2>
+    <p>It takes two minutes. There's no obligation. You'll get a direct response from our team — not a call center, not an automated system.</p>
+    <div class="fbtns">
+      <a href="#questionnaire" class="btn-wh">⏱ Start the 2-Min Questionnaire</a>
+      <a href="#contact" class="btn-owh">Contact Us Directly</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-g">
+    <div>
+      <div class="sec-ey">Get in Touch</div>
+      <h2 class="sec-h2">Contact Us</h2>
+      <p class="sec-lead">Have a question before filling in the questionnaire? Want to discuss a specific property?</p>
+      <div class="ci-items">
+<div class="ci-item"><div class="ci-icon">📞</div><div class="ci-text"><strong>Phone</strong><span><a href="tel:8038884107" style="color:var(--bark-lt);">803-888-4107</a></span></div></div>
+        <div class="ci-item"><div class="ci-icon">✉️</div><div class="ci-text"><strong>Email</strong><span><a href="/cdn-cgi/l/email-protection#690c0f0f101b1c0b0007290e04080005470a0604" style="color:var(--bark-lt);"><span class="__cf_email__" data-cfemail="462320203f3433242f2806212b272f2a6825292b">[email&#160;protected]</span></a></span></div></div>
+        <div class="ci-item"><div class="ci-icon">🕐</div><div class="ci-text"><strong>Response Time</strong><span>We aim to respond within one business day</span></div></div>
+      </div>
+    </div>
+    <div class="cf">
+      <h3>Send Us a Message</h3>
+      <div class="cf-f"><label class="cf-l">Your Name</label><input class="cf-i" type="text" placeholder="Full name"></div>
+      <div class="cf-f"><label class="cf-l">Phone Number</label><input class="cf-i" type="tel" placeholder="(803) XXX-XXXX"></div>
+      <div class="cf-f"><label class="cf-l">Email</label><input class="cf-i" type="email" placeholder="you@example.com"></div>
+      <div class="cf-f"><label class="cf-l">Message</label><textarea class="cf-i" placeholder="Tell us about your property or ask a question..."></textarea></div>
+      <button class="cf-btn">Send Message</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft">
+    <div class="fb">
+      <div class="logo-7b" style="margin-bottom:14px;">
+        <div class="logo-7b-frame" style="border-color:rgba(212,137,90,.3);padding:8px 20px;">
+          <div class="logo-7b-main" style="font-size:.9rem;letter-spacing:.2em;color:rgba(245,239,227,.75);">BRICK <span class="amp" style="color:#D4895A;">&amp;</span> BARN</div>
+          <div class="logo-7b-sub" style="color:rgba(245,239,227,.28);">Midland Partners</div>
+        </div>
+      </div>
+      <p>Serving Richland and Lexington counties, Columbia SC, since 2019. Closings by Harrell, Martin &amp; Peace, P.A.</p>
+    </div>
+    <div class="fc-col"><h5>This Division</h5><ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#who">Who We Help</a></li>
+    <li><a href="#why-sell-direct">Why Sell Direct?</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#questionnaire">2-Min Questionnaire</a></li>
+    </ul></div>
+    <div class="fc-col"><h5>Other Divisions</h5><ul>
+      <li><a href="#" onclick="openSub('renovation');return false;">Renovation</a></li>
+      <li><a href="#" onclick="openSub('maintenance');return false;">Maintenance</a></li>
+      <li><a href="#" onclick="openSub('offmarket');return false;">Off-Market Properties</a></li>
+    </ul></div>
+    <div class="fc-col"><h5>Contact</h5><ul>
+      <li><a href="tel:8038884107">803-888-4107</a></li>
+      <li><a href="/cdn-cgi/l/email-protection#1c797a7a656e697e75725c7b717d7570327f7371"><span class="__cf_email__" data-cfemail="cfaaa9a9b6bdbaada6a18fa8a2aea6a3e1aca0a2">[email&#160;protected]</span></a></li>
+      <li><a href="https://harrellmartinpeace.com" target="_blank">Closing Attorney →</a></li>
+    </ul></div>
+  </div>
+  <div class="fbot">
+    <p>© 2024 Brick &amp; Barn LLC · Columbia, SC · All rights reserved · Closings by Harrell, Martin &amp; Peace, P.A.</p>
+    <div class="fleg">
+      <a href="#" onclick="om('privacy');return false;">Privacy Policy</a>
+      <a href="#" onclick="om('terms');return false;">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
+<!-- SUB-PAGES (separate landing page frames) -->
+<!-- RENOVATION -->
+<div class="subpage" id="sub-renovation">
+  <div class="sp-nav">
+    <button class="sp-back" onclick="closeSub('renovation')">← Back to Main Site</button>
+    <span class="sp-title">BRICK &amp; BARN</span>
+  </div>
+  <div class="sp-hero">
+    <div class="sec-ey" style="justify-content:center;">Brick &amp; Barn</div>
+    <h1>Renovation Division</h1>
+    <p>Professional property improvement and enhancement across the Columbia metro area.</p>
+  </div>
+  <div class="sp-body">
+    <div class="sp-soon">
+      <h3>Content Coming Soon</h3>
+      <p>This division's landing page is being built. Check back soon or contact us directly to learn more about our renovation services.</p>
+      <a href="#contact" onclick="closeSub('renovation')" class="btn-hero" style="display:inline-flex;margin:0 auto;">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- MAINTENANCE -->
+<div class="subpage" id="sub-maintenance">
+  <div class="sp-nav">
+    <button class="sp-back" onclick="closeSub('maintenance')">← Back to Main Site</button>
+    <span class="sp-title">BRICK &amp; BARN</span>
+  </div>
+  <div class="sp-hero">
+    <div class="sec-ey" style="justify-content:center;">Brick &amp; Barn</div>
+    <h1>Maintenance Division</h1>
+    <p>Professional property maintenance and management services across the Columbia metro area.</p>
+  </div>
+  <div class="sp-body">
+    <div class="sp-soon">
+      <h3>Content Coming Soon</h3>
+      <p>This division's landing page is being built. Check back soon or contact us directly to learn more about our maintenance services.</p>
+      <a href="#contact" onclick="closeSub('maintenance')" class="btn-hero" style="display:inline-flex;margin:0 auto;">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- OFF-MARKET PROPERTIES -->
+<div class="subpage" id="sub-offmarket">
+  <div class="sp-nav">
+    <button class="sp-back" onclick="closeSub('offmarket')">← Back to Main Site</button>
+    <span class="sp-title">BRICK &amp; BARN</span>
+  </div>
+  <div class="sp-hero">
+    <div class="sec-ey" style="justify-content:center;">Brick &amp; Barn</div>
+    <h1>Off-Market Properties</h1>
+    <p>Properties available exclusively through Brick &amp; Barn — not listed on MLS or Zillow. For serious buyers and investors.</p>
+  </div>
+  <div class="sp-body">
+    <div class="sp-soon">
+      <h3>Listings Coming Soon</h3>
+      <p>Current off-market properties from our portfolio will appear here. Contact us directly to hear about what's available now.</p>
+      <a href="#contact" onclick="closeSub('offmarket')" class="btn-hero" style="display:inline-flex;margin:0 auto;">Contact Us About Available Properties</a>
+    </div>
+  </div>
+</div>
+
+<!-- PRIVACY MODAL -->
+<div class="mover" id="privacyModal">
+  <div class="modal">
+    <div class="mh"><h3>Privacy Policy</h3><button class="mclose" onclick="om_close('privacy')">×</button></div>
+    <div class="mb">
+      <p><em>Effective date: January 1, 2024</em></p>
+      <h4>1. Information We Collect</h4><p>Brick &amp; Barn LLC collects information you voluntarily submit through our questionnaire or contact forms, including your name, phone number, email address, and property details.</p>
+      <h4>2. How We Use Your Information</h4><p>Information is used solely to evaluate your property situation and contact you regarding a potential direct sale. Reviewed by our team — not automated systems.</p>
+      <h4>3. Information Sharing</h4><p>We do not sell, rent, share, or disclose your personal information to any third parties. Information may only be shared with legal or title professionals directly involved in a transaction you choose to enter into.</p>
+      <h4>4. Your Rights</h4><p>You may request to review, update, or delete any personal information we hold by contacting us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bdd8dbdbc4cfc8dfd4d3fddad0dcd4d193ded2d0">[email&#160;protected]</a> or 803-888-4107.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS MODAL -->
+<div class="mover" id="termsModal">
+  <div class="modal">
+    <div class="mh"><h3>Terms of Use</h3><button class="mclose" onclick="om_close('terms')">×</button></div>
+    <div class="mb">
+      <p><em>Effective date: January 1, 2024</em></p>
+      <h4>1. No Obligation</h4><p>Submitting information through this website creates no legal obligation of any kind. You are free to stop the process at any point, for any reason, at no cost.</p>
+      <h4>2. Not Legal or Financial Advice</h4><p>Nothing on this site constitutes legal, financial, or real estate advice. We strongly encourage you to consult a licensed SC attorney before entering any real estate transaction.</p>
+      <h4>3. Real Estate Disclosure</h4><p>Brick &amp; Barn LLC is a real estate investment company, not a licensed real estate broker or agent. We purchase properties directly as a principal buyer.</p>
+      <h4>4. Closing Attorney</h4><p>All closings are handled by Harrell, Martin &amp; Peace, P.A., a licensed South Carolina law firm. Sellers are always welcome and encouraged to retain independent legal counsel.</p>
+      <h4>5. Governing Law</h4><p>These terms are governed by the laws of the State of South Carolina.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// Global helpers — must be global so onclick="..." attributes can reach them
+function sc(id){const e=document.getElementById(id);if(e)e.classList.add('show');}
+function hc(id){const e=document.getElementById(id);if(e)e.classList.remove('show');}
+function sp(id){const e=document.getElementById(id);if(e)e.classList.add('show');}
+function hp(id){const e=document.getElementById(id);if(e)e.classList.remove('show');}
+
+function toggleVid(btn){
+  const exp=btn.closest('.tc').querySelector('.tc-expand');
+  const isOpen=exp.classList.contains('open');
+  document.querySelectorAll('.tc-expand').forEach(e=>e.classList.remove('open'));
+  if(!isOpen)exp.classList.add('open');
+}
+function closeVid(btn){btn.closest('.tc-expand').classList.remove('open');}
+
+function openSub(name){
+  document.getElementById('sub-'+name).classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeSub(name){
+  document.getElementById('sub-'+name).classList.remove('open');
+  document.body.style.overflow='';
+}
+function om_open(name){
+  document.getElementById(name+'Modal').style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function om_close(name){
+  document.getElementById(name+'Modal').style.display='none';
+  document.body.style.overflow='';
+}
+
+// Questionnaire state
+let qsecs, qtotal, qcur=0;
+
+function updateQ(){
+  const pct=Math.round((qcur/(qtotal-1))*100);
+  document.getElementById('qfill').style.width=pct+'%';
+  document.getElementById('qpct').textContent=pct+'% complete';
+  document.querySelectorAll('.qdot').forEach((d,i)=>{
+    d.classList.remove('active','done');
+    if(i<qcur)d.classList.add('done');
+    if(i===qcur)d.classList.add('active');
+  });
+  document.getElementById('qsi').textContent=`Section ${qcur+1} of ${qtotal}`;
+  document.getElementById('qback').disabled=qcur===0;
+  document.getElementById('qnext').textContent=qcur===qtotal-1?'Submit →':'Next →';
+}
+function qNext(){
+  if(qcur===qtotal-1){
+    document.getElementById('qnav').style.display='none';
+    qsecs[qcur].classList.remove('active');
+    document.getElementById('qty').classList.add('show');
+    document.getElementById('qfill').style.width='100%';
+    document.getElementById('qpct').textContent='100% complete';
+    document.querySelectorAll('.qdot').forEach(d=>d.classList.add('done'));
+    return;
+  }
+  qsecs[qcur].classList.remove('active');
+  qcur++;qsecs[qcur].classList.add('active');
+  updateQ();
+  document.getElementById('questionnaire').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function qPrev(){
+  if(qcur===0)return;
+  qsecs[qcur].classList.remove('active');
+  qcur--;qsecs[qcur].classList.add('active');
+  updateQ();
+  document.getElementById('questionnaire').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+// Nav scroll
+const navEl=document.getElementById('nav');
+const ntog=document.getElementById('ntog');
+const nlinks=document.getElementById('nlinks');
+window.addEventListener('scroll',()=>navEl.classList.toggle('sc',window.scrollY>40));
+ntog.addEventListener('click',()=>nlinks.classList.toggle('open'));
+document.querySelectorAll('.nlinks a').forEach(a=>a.addEventListener('click',()=>nlinks.classList.remove('open')));
+
+// FAQ
+document.querySelectorAll('.fiq').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const fi=q.parentElement,isOp=fi.classList.contains('op');
+    document.querySelectorAll('.fi').forEach(f=>f.classList.remove('op'));
+    if(!isOp)fi.classList.add('op');
+  });
+});
+
+// Option highlight
+document.querySelectorAll('.qopt').forEach(o=>{
+  const inp=o.querySelector('input');
+  if(!inp)return;
+  inp.addEventListener('change',()=>{
+    if(inp.type==='radio')document.querySelectorAll(`input[name="${inp.name}"]`).forEach(r=>r.closest('.qopt').classList.remove('sel'));
+    inp.checked?o.classList.add('sel'):o.classList.remove('sel');
+  });
+});
+
+// Questionnaire init
+qsecs=document.querySelectorAll('.qsec');
+qtotal=qsecs.length;
+const qdotsEl=document.getElementById('qdots');
+for(let i=0;i<qtotal;i++){const d=document.createElement('div');d.className='qdot';qdotsEl.appendChild(d);}
+updateQ();
+
+}); // end DOMContentLoaded
+</script>
+</body>
+</html>
